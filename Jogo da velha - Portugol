@@ -1,0 +1,166 @@
+programa {
+  funcao inicio() {
+    caracter tabuleiro[3][3], jogada1[3][3], jogada2[3][3] = {{'O'}}, tabuleiroResult[3][3]
+    real jogada
+    jogada1[0][0] = 'X'
+    
+    
+    escreva("Jogo da véia: \n")
+    escreva("Apresento aos jogadores o tabuleiro e suas respectivas posições: \n")
+    escreva("[0.0][0.1][0.2]\n[1.0][1.1][1.2]\n[2.0][2.1][2.2]\n")
+    escreva("A primeira jogada começa sempre com o X e em seguida O. Bom jogo!\n")
+
+    para(inteiro i = 0; i < 3; i ++){
+      para(inteiro j = 0; j < 3; j ++){
+      tabuleiroResult[i][j] = ' '}}
+
+    para(inteiro i = 0; i < 3; i ++){
+      para(inteiro j = 0; j < 3; j ++){
+      tabuleiro[i][j] = ' '
+      escreva("[",tabuleiro[i][j],"]")}
+      escreva("\n")
+      }
+
+      para(inteiro x = 0; x < 3; x ++){
+      para(inteiro y = 0; y < 3; y ++){
+       
+        escreva("primeira jogada com X, escolha a posição\n")
+          leia(jogada)
+      se(jogada == 0.0){
+        tabuleiroResult[0][0] = 'X'}
+      se(jogada == 0.1){
+        tabuleiroResult[0][1] = 'X'}
+      se(jogada == 0.2){
+        tabuleiroResult[0][2] = 'X'}  
+      se(jogada == 1.0){
+        tabuleiroResult[1][0] = 'X'}  
+      se(jogada == 1.1){
+        tabuleiroResult[1][1] = 'X'}  
+      se(jogada == 1.2){
+        tabuleiroResult[1][2] = 'X'}  
+      se(jogada == 2.0){
+        tabuleiroResult[2][0] = 'X'}
+      se(jogada == 2.1){
+        tabuleiroResult[2][1] = 'X'}
+      se(jogada == 2.2){
+        tabuleiroResult[2][2] = 'X'} 
+      se((tabuleiroResult[0][0] == 'X')e(tabuleiroResult[0][1] == 'X')e(tabuleiroResult[0][2] == 'X')){
+        escreva("O X é o vencedor\n")
+      }
+      
+      para(inteiro x = 0; x < 3; x ++){
+      para(inteiro y = 0; y < 3; y ++){
+        escreva("[",tabuleiroResult[x][y],"]")}
+        escreva("\n")} 
+            
+        escreva("Segunda jogada com O, escolha a posição\n")
+          leia(jogada)
+      se(jogada == 0.0){
+        tabuleiroResult[0][0] = 'O'}
+      se(jogada == 0.1){
+        tabuleiroResult[0][1] = 'O'}
+      se(jogada == 0.2){
+        tabuleiroResult[0][2] = 'O'}  
+      se(jogada == 1.0){
+        tabuleiroResult[1][0] = 'O'}  
+      se(jogada == 1.1){
+        tabuleiroResult[1][1] = 'O'}  
+      se(jogada == 1.2){
+        tabuleiroResult[1][2] = 'O'}  
+      se(jogada == 2.0){
+        tabuleiroResult[2][0] = 'O'}
+      se(jogada == 2.1){
+        tabuleiroResult[2][1] = 'O'}
+      se(jogada == 2.2){
+        tabuleiroResult[2][2] = 'O'}  
+
+      para(inteiro x = 0; x < 3; x ++){
+      para(inteiro y = 0; y < 3; y ++){
+        escreva("[",tabuleiroResult[x][y],"]")}
+        escreva("\n")}
+       
+      }
+      
+      }
+       
+       
+       
+       
+       
+       
+       
+        
+        
+      
+      
+      
+      
+      
+      
+      se(jogada == 0.0){
+        tabuleiroResult[0][0] = 'X'}
+      se(jogada == 0.1){
+        tabuleiroResult[0][1] = 'X'}
+      se(jogada == 0.2){
+        tabuleiroResult[0][2] = 'X'}  
+      se(jogada == 1.0){
+        tabuleiroResult[1][0] = 'X'}  
+      se(jogada == 1.1){
+        tabuleiroResult[1][1] = 'X'}  
+      se(jogada == 1.2){
+        tabuleiroResult[1][2] = 'X'}  
+      se(jogada == 2.0){
+        tabuleiroResult[2][0] = 'X'}
+      se(jogada == 2.1){
+        tabuleiroResult[2][1] = 'X'}
+      se(jogada == 2.2){
+        tabuleiroResult[2][2] = 'X'}    
+        
+        
+        
+
+        para(inteiro x = 0; x < 3; x ++){
+        para(inteiro y = 0; y < 3; y ++){
+        escreva("[",tabuleiroResult[x][y],"]")}
+        
+        escreva("\n")}
+        
+      
+      
+      
+      
+      
+      
+     /* ou(jogada == 0.1)ou(jogada == 0.2)ou(jogada == 1.0)ou(jogada == 1.1)ou(jogada == 1.2)ou(jogada == 2.0)ou(jogada == 2.1)ou(jogada == 2.2)){
+        escreva("oi")
+      }}}*/
+      
+    
+      
+
+
+
+
+
+      
+      
+      
+      }
+    
+    
+    
+    
+    
+    /*enquanto((tabuleiro[0.0] == 'x'))e((tabuleiro[0.1] == 'x'))e((tabuleiro[0.2] == 'x')){
+    para(inteiro i = 0; i < 3; i ++ ){
+      para(inteiro j = 0; j < 3; j ++){
+      escreva("\nDigite X ou O\n")
+      leia(tabuleiro[i][j])}
+       escreva(tabuleiro[i][j],"\n")
+    }}*/
+    
+    
+
+    
+  }
+}
